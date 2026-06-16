@@ -3,148 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Xlibre</title>
+  <title>XLibre</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <ling rel="preload" href="img/birthday-bg.jpg" as="image">
 </head>
 <body>
   <header>
-    <div class="banner">
-      <span class="text">X_libre</span>
-    </div>
+    <!--
     <nav>
-      <a href="#about">about</a> |
-      <a href="#download">download</a> |
-      <a href="#contact">contact</a> |
-      <a href="#faq">faq</a> |
-      <a href="#privacy">privacy</a>
+      <a href="#about">About</a> |
+      <a href="#download">Download</a> |
+      <a href="#contributing">Contributing</a> |
+      <a href="#contact">Contact</a> |
+      <a href="#privacy">Privacy</a>
     </nav>
+    -->
+    <div class="banner">
+      <span class="text"><img src="img/text.png" width="427" height="237"></span>
+    </div>
   </header>
 
   <main>
     <section id="about">
       <hr>
-      <h2>about</h2>
-      <p><strong>Xlibre</strong> is a fork of the Xorg Xserver with lots of
-      code cleanups and enhanced functionality.</p>
+      <h2>About</h2>
+      <p><strong>XLibre</strong> is the community-managed display server for the <a href="https://en.wikipedia.org/wiki/X_Window_System_core_protocol">X Window System Protocol Version 11 (Wikipedia)</a>, in short, X11.
+      </p>
 
-      <p><strong>This</strong> fork was necessary since toxic elements within
-      Xorg projects, moles from BigTech, are boycotting any substantial work on
-      Xorg, in order to destroy the project, to eliminate competition of their
-      own products. Classic "embrace, extend, extinguish" tactics.</p>
+      <hr>
+      <h3>Our Mission</h3>
+      <p><strong>The XLibre</strong> contributors strive to clean up and strengthen the existing code base while maintaining backward compatibility to make X11 a viable choice for the future. Another goal is to actively enhance the functionality of the Xserver and its drivers. We also take care of the improvements to the X.Org Server that have been unreleased for several years or were made to Xwayland only. Our decision-making is based on merit and our active community keen to bring X forward.</p>
 
-      <p><strong>Right</strong> after journalists first began covering the
-      planned fork Xlibre, on June 6th 2025, Redhat employees started a purge
-      on the Xlibre founder's GitLab account on freedesktop.org: deleted the
-      git repo, tickets, merge requests, etc, and so fired the shot that the
-      whole world heard.</p>
-
-      <p><strong>This</strong> is an independent project, not at all affiliated
-      with BigTech or any of their subsidiaries or tax evasion tools, nor any
-      political activists groups, state actors, etc. It's explicitly free of
-      any "DEI" or similar discriminatory policies. Anybody who's treating
-      others nicely is welcomed.</p>
-
-      <p><strong>It doesn't</strong> matter which country you're coming from,
-      your political views, your race, your sex, your age, your food menu,
-      whether you wear boots or heels, whether you're furry or fairy, Conan or
-      McKay, comic character, a small furry creature from Alpha Centauri, or
-      just a boring average person. Anybody who's interested in bringing X
-      forward is welcome.</p>
-
-      <p><strong>Together we'll make X great again!</strong></p>
+      <hr>
+      <h3>Our Achievements</h3>
+      <p><strong>Since</strong> the fork on June 5, 2025, our by now more than 50 unique contributors have, e.g., released numerous code cleanups, the <a href="https://github.com/X11Libre/xserver/blob/master/doc/Xnamespace.md">Xnamespace extension</a> for separating X clients, and backported all CVE fixes of the X.Org Server as of today. Together we integrated <a href="https://github.com/X11Libre/xserver/commit/0dacee6c5149b63a563e9bed63502da2e9f1ac1f">TearFree by default</a> and <a href="https://github.com/X11Libre/xserver/commit/461411c798c263f70daa96f7136614dfefda6adc">allowed enabling atomic modesetting</a>.</p>
+      <p><strong>We</strong> re-added support for the proprietary Nvidia driver versions 340, 390, 470 in addition to the already supported Nvidia versions 570, and newer. <a href="https://github.com/X11Libre/xserver/tree/master/hw/kdrive">Xfbdev</a>, the generic framebuffer Xserver for Linux, has been brought back too.</p>
+      <p><strong>There</strong> is now support for seat management via <a href="https://sr.ht/~kennylevinsen/seatd" rel="nofollow">seatd</a> besides <a href="https://www.freedesktop.org/software/systemd/man/latest/systemd-logind.service.html" rel="nofollow">systemd-logind</a> and our CI builds the XLibre Xserver and its drivers on several BSDs, Linux, MacOS, and Microsoft Windows.</p>
     </section>
 
     <section id="download">
       <hr>
-      <h2>download</h2>
+      <h2>Download</h2>
       <p><strong>The Xlibre</strong> project is hosted on GitHub. You can find
-      the source code and follow development
-      <a href="https://github.com/X11Libre/xserver" target="_blank">there.</a></p>
+      the source code and the releases at
+      <a href="https://github.com/X11Libre" target="_blank">github.com/X11Libre.</a></p>
 
-      <p><strong>If</strong> you want to download the latest source snapshot as
-      a compressed archive, a direct
-      <a href="https://github.com/X11Libre/xserver/archive/refs/heads/master.zip" target="_blank">zip</a>
-      file is also available.</p>
+      <p><strong>Precompiled</strong> binaries for XLibre are available for many distributions. Please take a look at our <a href="https://github.com/X11Libre/xserver/wiki/Are-We-XLibre-Yet%3F" target="_blank">Are We XLibre Yet?</a> page to find yours.</p>
+    </section>
 
-      <p><strong>Precompiled</strong> binaries for Xlibre are available for
-      many distributions. Take a look 
-      <a href="https://github.com/X11Libre/xserver/wiki/Are-We-XLibre-Yet%3F" target="_blank">here</a>
-      to find your distribution.</p>
+    <section id="contributing">
+      <hr>
+      <h2>I want to help!</h2>
+      <p><strong>That's great;</strong> there's enough to do for everyone. You may consider <a href="https://github.com/orgs/X11Libre/discussions/categories/1-new-ideas">one</a> of the <a href="https://github.com/orgs/X11Libre/discussions/categories/2-rfcs-of-the-core-team">many</a> <a href="https://github.com/orgs/X11Libre/discussions/categories/3-ideas-soon-to-be-addressed">ideas</a> and <a href="https://github.com/X11Libre/xserver/issues?q=is%3Aissue%20state%3Aopen%20label%3Aenhancement">feature requests</a> out there. To help in testing, you may consider becoming an <a href="https://github.com/X11Libre/xserver/wiki/XLibre-Test-Drivers">XLibre Test Driver</a>. Please also have a look at the <a href="https://github.com/X11Libre/xserver/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22">good first</a> and <a href="https://github.com/X11Libre/xserver/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22help%20wanted%22">help wanted</a> issues and the <a href="https://github.com/orgs/X11Libre/discussions/211">Liberated Screens</a>.</p>
+
+      <p><strong>If you</strong> want to work on anything, just let us know. If you have any questions, <a href="https://github.com/orgs/X11Libre/discussions/categories/q-a">just ask</a>. Thank you!</p>
+
+      <p><strong>The XLibre project</strong> is free of discriminatory policies. Anybody who's treating others nicely is welcome. Anybody who's interested in bringing X forward is welcome too.</p>
     </section>
 
     <section id="contact">
       <hr>
-      <h2>contact</h2>
-      <p><strong>Feel</strong> free to join us through our various channels.
-      <ul>
-        <li>the
-            <a href="https://www.freelists.org/list/xlibre" target="_blank">mailing list</a>
-            is for in-depth discussions, development, and collaboration around
-            Xlibre</li>
-        <li>our
-            <a href="https://t.me/x11dev" target="_blank">Telegram</a> channel
-            is for real-time chat and quick questions</li>
-        <li>and the
-            <a href="https://github.com/X11Libre" target="_blank">Github repository</a>
-            is for reporting issues, contributing code, and following the
-            project’s development</li>
-      </ul>
-      </p>
-      <p><strong>Whether</strong> you're contributing to the core protocol,
-      working on enhancements to the rendering pipeline, or integrating new
-      features for modern desktop environments, these are the places to share
-      your ideas, ask technical questions, and stay updated on project
-      progress.</p>
-      <p><strong>Developers</strong>, testers, and anyone interested in the
-      evolution of Xlibre are encouraged to participate and help shape the
-      future of this open-source initiative.</p>
-    </section>
-
-    <section id="faq">
-      <hr>
-      <h2>faq</h2>
-      <p><strong>Q:</strong> What is Xlibre?</p>
-      <p><strong>A:</strong> Xlibre is a freshly created fork of the Xorg X11
-      server, initiated by Enrico Weigelt, aiming to provide a more actively
-      maintained and modernized alternative to the aging X11 system.</p>
-
-      <p><strong>Q:</strong> Why was it forked?</p>
-      <p><strong>A:</strong> Xorg has been stifled by “toxic elements” and
-      “BigTech moles” blocking significant contributions. A classic “embrace,
-      extend, extinguish” pattern. Xlibre is presented as a pushback to
-      revitalize the codebase.</p>
-
-      <p><strong>Q:</strong> Who’s behind Xlibre?</p>
-      <p><strong>A:</strong> The fork is led by Enrico Weigelt, previously a
-      prolific contributor to Xorg.</p> 
-
-      <p><strong>Q:</strong> What features or enhancements does Xlibre
-      bring?</p>
-      <p><strong>A:</strong> Code cleanups and modernization aimed at improved
-      maintainability and performance. Support for Xnamespace (greater
-      isolation) and updating nested Xnest to use libxcb.</p>
-
-      <p><strong>Q:</strong> What about Nvidia compatibility?</p>
-      <p><strong>A:</strong> We keep binary compatibility to proprietary Nvidia
-      driver (Ver. 570 and newer).</p>
-
-      <p><strong>Q:</strong> Show me.</p>
-      <p><strong>A:</strong> <a href="img/xlibre-freebsd.png">Here</a>,
-      <a href="img/xlibre-nixos.jpg">here</a>,
-      <a href="img/xlibre-rk3588.png">here</a> and much more
-      <a href="https://github.com/orgs/X11Libre/discussions/categories/liberated-screens">here</a></p>
+      <h2>Contact</h2>
+      <p><a href="https://github.com/orgs/X11Libre/discussions">XLibre Discussions at GitHub</a> | <a href="https://www.freelists.org/list/xlibre" rel="nofollow">XLibre mailing list at FreeLists</a> | <a href="https://t.me/x11dev" rel="nofollow">@x11dev channel at Telegram</a> | <a href="https://matrix.to/#/#xlibredev:matrix.org" rel="nofollow">#xlibredev space at Matrix</a> | <a href="https://github.com/X11Libre/xserver/security/policy">XLibre security contact at GitHub</a>      </p>
     </section>
 
     <section id="privacy">
       <hr>
-      <h2>privacy</h2>
-      <p><strong>You</strong> can check your cookies - if you want. You will
-      not find any set by this page.</p>
-      
-      <p><strong>This</strong> page does not collect any data and neither does
-      the underlying webserver. This page is only about Xlibre, not your
-      data.</p>
+      <h2>Privacy</h2>
+      <p><strong>This</strong> page does not collect any data and neither does the underlying webserver. This page is about XLibre, not your data.</p>
     </section>
 
   </main>
